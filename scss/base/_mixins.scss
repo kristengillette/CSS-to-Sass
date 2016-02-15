@@ -1,0 +1,12 @@
+@mixin media($media-width, $prop, $val) {
+    @media #{$media-width} {
+       #{$prop}: $val;
+    }   
+}
+
+@mixin text($size, $weight: null, $color: null, $l-height: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $l-height;
+}

@@ -1,0 +1,142 @@
+//Gallery Layout
+    #gallery {
+        @include media ($brk-narrow, margin, 0 4.4%);
+
+      	@include media ($brk-wide, width, 100%);
+        @include media ($brk-wide, margin, 0 30px);
+
+        img {
+        	@include media ($brk-narrow, width, 100%); 
+        }
+
+        li {
+        	@include media ($brk-narrow, float, left);
+        	@include media ($brk-narrow, width, 50%);
+        	@include media ($brk-narrow, padding, 0 1%);
+        	@include media ($brk-narrow, margin-bottom, 45px);
+
+        	@include media ($brk-wide, width, 31%);
+        	@include media ($brk-wide, margin-bottom, 57px);
+
+            a p {
+            	@include media ($brk-narrow, margin, 0);
+                margin: 0;
+            }
+        }
+    }
+
+.main-photo {
+    width: 62.5%;
+
+    @include media ($brk-narrow, float, right);
+    @include media ($brk-narrow, width, 38%);
+    @include media ($brk-narrow, margin, 11.5px 4% 40px 5%);
+
+    @include media ($brk-wide, margin, 60px 30px 40px 5%);
+    @include media ($brk-wide, width, 36%);
+
+}
+
+.bio-text {
+    margin: 18.5px auto 52px auto;
+    @extend %centered;
+    width: 87.5%;
+
+    @include media ($brk-narrow, text-align, left);
+    @include media ($brk-narrow, float, left);
+    @include media ($brk-narrow, width, 45.5%);
+    @include media ($brk-narrow, margin-left, 7.5%);
+
+    @include media ($brk-wide, margin, 124px 0 124px 30px);
+    @include media ($brk-wide, width, 50%);
+}
+
+.portfolio {
+    background-color: $white;
+    padding-bottom: 32.5px;
+
+    @extend %clearfix;
+    
+    @include media ($brk-narrow, padding-bottom, 69px);
+
+    @include media ($brk-wide, padding-bottom, 10px);
+    @include media ($brk-wide, margin, 0 auto);
+    @include media ($brk-wide, width, 95%);
+}
+
+#portfolio {
+    padding: 51px 0;
+    margin: 0 auto;
+
+    @include media ($brk-narrow, padding-top, 60px);
+}
+
+.portfolio-text {
+    margin: 0 auto 45.25px auto;
+    width: 83.75%;
+    @include media ($brk-narrow, margin, 0 auto);
+
+    @include media ($brk-wide, width, 100%);
+}
+
+.contact {
+    margin: 0 auto 65.25px auto;
+    @include media ($brk-narrow, margin-bottom, 75px);
+
+    @include media ($brk-wide,margin-bottom, 80px); 
+}
+
+#contact {
+    margin-top: 58px;
+    margin-bottom: 0;
+
+    @include media ($brk-narrow, padding-top, 60px);
+    @include media ($brk-narrow, margin-top, 45px);
+
+    @include media ($brk-wide, margin, 60px 0 40px);
+}
+
+.contact-para {
+    margin: 38.5px auto 0;
+    width: 90%;
+
+    @include media ($brk-narrow, margin, 42px auto 0);
+    @include media ($brk-narrow, width, 70%);
+
+    @include media ($brk-wide, width, 60%); 
+    @include media ($brk-wide, margin, 0 auto);
+}
+
+.contact-phone {
+    margin-top: 37.5px;
+    margin-bottom: 24.25px;
+
+    @include media ($brk-narrow, margin, 55px 0 20px);
+}
+
+.contact-email {
+    margin: 0;
+}
+
+.main-footer {
+    border-top: 1px #e7e7e7 solid;
+    margin: 0 auto;
+    @extend %main-width;
+}
+
+.footer-name {
+    float: left;
+    margin-top: 29.5px;
+    margin-bottom: 32.5px;
+
+    @include media ($brk-narrow, margin, 30px 0 35px);
+}
+
+.back-to-top {
+    margin-top: 31.75px;
+    margin-bottom: 32.5px;
+    float: right;
+
+    @include media($brk-narrow, display, none);
+}
+

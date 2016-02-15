@@ -1,0 +1,22 @@
+.main-footer {
+	@include media ($brk-wide, width, 88%);
+	@extend %clearfix;
+}
+
+.footer-nav {
+    display: none;
+    @include media ($brk-narrow, margin, 30px 0 35px);
+    @include media ($brk-narrow, display, inline);
+    @include media ($brk-narrow, float, right);
+
+     li {
+
+     	@include media ($brk-narrow, margin-left, 30px);
+     	@include media ($brk-narrow, display, inline-block);
+
+            a {
+            	@include media ($brk-narrow, padding, 5px 0);
+
+        	}
+        }
+}

@@ -1,0 +1,43 @@
+header {
+	@include media($brk-wide, margin, 0 30px);
+   }
+
+.bio {
+	@include media($brk-wide, clear, both);
+	@include media ($brk-wide, margin, 0);
+	@extend %clearfix;
+    }
+
+.name {
+    margin-top: 26px;
+    margin-bottom: 30px;
+    @include media ($brk-narrow, margin-bottom, 36.5px);
+    @include media ($brk-wide, float, left);
+    @include media ($brk-wide, margin, 57px 0 0 30px);
+    @include media ($brk-wide, width, 50%);
+    @include media ($brk-wide, text-align, left);
+}
+
+.main-nav {
+    margin: 0 auto 35px auto;
+    @extend %main-width;
+    
+    @include media ($brk-wide, display, inline);
+
+    li {
+        background-color: $white;
+        padding: 13.5px;
+        margin-bottom: 5px;
+
+        a {
+            padding: 13.5px;
+        }
+
+        @include media ($brk-narrow, background, none);
+        @include media ($brk-narrow, display, inline-block);
+        @include media ($brk-narrow, padding, 0);
+        @include media ($brk-narrow, margin, 0 5px);
+        @include media ($brk-wide, margin-top, 67px);
+        @include media ($brk-wide, float, right);
+    }
+}

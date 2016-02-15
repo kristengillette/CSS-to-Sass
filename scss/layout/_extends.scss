@@ -1,0 +1,23 @@
+%centered {
+ text-align: center;
+}
+
+%medium-bold {
+    @include text($medium-font, $bold);
+}
+
+%uppercase {
+	text-transform: uppercase;
+}
+
+%main-width {
+	width: $width;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

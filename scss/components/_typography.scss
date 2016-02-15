@@ -1,0 +1,58 @@
+body {
+    font-family: $font-family;
+    color: $text-color;
+}
+
+h3 {
+    @include text($small-font * 1.5);
+    }
+
+.name {
+    @include text($small-font * 2, $bold);
+}
+
+.main-nav {
+	@extend %medium-bold;
+    @extend %centered;
+    @extend %uppercase;
+}
+
+.bio-text {
+
+	@include text($large-font, $light, $lighter-gray, 1.5em);
+    @include media ($brk-narrow, font-size, $extra-large-font);
+}
+
+#portfolio, #contact {
+	@extend %medium-bold;
+	@extend %uppercase;
+}
+
+.portfolio-text {
+	@include text($large-font, $light, $l-height: 1.5em);
+}
+
+.contact-info {
+	@include text($large-font, $light, $l-height: 1.5em);
+
+    @include media ($brk-narrow, font-size, $extra-large-font);
+}
+
+.contact-phone, .contact-info {
+    line-height: 28px;
+}
+
+.footer-name {
+    @extend %medium-bold;
+}
+
+.footer-nav {
+	@include media ($brk-narrow, text-transform, uppercase);
+	@include media ($brk-narrow, font-size, $small-font);
+	@include media ($brk-narrow, font-weight, $bold);
+}
+
+.back-to-top {
+	@include text($small-font, $bold);
+    @extend %uppercase;
+}

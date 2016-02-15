@@ -1,0 +1,28 @@
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0 auto;
+    background-color: $background-color;
+    line-height: 1;
+    max-width: 1100px;
+    @extend %centered;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+h3 {
+    margin-top: 27.5px;
+    margin-bottom: 16.75px;
+    @include media ($brk-narrow, margin, 30px 0 20px);
+}
+
+img {
+    @extend %main-width;
+}
