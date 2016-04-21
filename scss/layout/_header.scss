@@ -19,8 +19,7 @@ header {
 }
 
 .main-nav {
-    margin: 0 auto 35px auto;
-    @extend %main-width;
+    margin: 24px;
     
     @include media ($brk-wide, display, inline);
 
